@@ -41,7 +41,7 @@ To run the Alwrity program using Streamlit, follow these steps:
     ```
 4. **Update Google API Key:**
     ```
-    cd $env:GOOGLE_API_KEY = "input_your_Google_API_key_here"
+    $env:GOOGLE_API_KEY = "input_your_Google_API_key_here"
     ```
    
 5. **Run the Program:** Use the `streamlit run` command to run the Alwrity program:
