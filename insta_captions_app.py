@@ -73,6 +73,14 @@ def main():
     # Title and description
     st.title("✍️ Alwrity - AI Instagram Caption Generator")
 
+    # Add API Key Input Section
+    with st.expander("**🔑 API Key Configuration:**", expanded=False):
+        user_api_key = st.text_input("**Enter your Google Generative AI API Key (Optional):**", type="password", placeholder="Enter API Key here")
+
+    # Pass the user-provided API key to the generate_text_with_exception_handling function
+    if user_api_key:
+        os.environ['GEMINI_API_KEY'] = user_api_key
+
     # Input section
     with st.expander("**💡  Instructions:**  Read the following before generating your Instagram captions.", expanded=True):
         st.markdown("**Let's create the perfect caption!** ✍️")
