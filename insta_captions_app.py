@@ -71,7 +71,7 @@ def main():
     st.markdown(hide_streamlit_footer, unsafe_allow_html=True)
 
     # Title and description
-    st.title("✍️ Alwrity - AI Instagram Caption Generator")
+    st.title("✍️ ALwrity - AI Instagram Caption Generator")
 
     # Add API Key Input Section
     with st.expander("**🔑 API Key Configuration:**", expanded=False):
